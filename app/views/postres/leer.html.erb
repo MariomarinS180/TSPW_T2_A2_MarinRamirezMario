@@ -1,0 +1,76 @@
+
+
+
+          <div class="row">
+
+            <div class="col-md-10">
+
+              <% @postres.each do |postres| %>
+                
+              <section class="text-center">
+                <div class="container">                  
+                  <h3 class="jumbotron-heading"><%= postres.nombre %></h3>
+                </div>
+              </section>
+
+              <div class="album py-5 bg-light">
+                <div class="container">
+
+                  <div class="row">
+
+                    <div class="col-md-5">
+                        <img src="/assets/img/<%= postres.img %>" class="img-fluid" title="<%= postres.nombre %>" alt="<%= postres.nombre %>">
+                    </div>
+
+                    <div class="col-md-5" align="left">
+
+                        <strong>Stock:</strong> <%= postres.stock %>
+
+                        <br><br>
+
+                        <strong>Precio:</strong> <%= postres.precio %>
+
+                        <br><br>
+
+                        <strong>Creado:</strong> <%= postres.created_at.strftime("%d/%m/%Y") %> 
+
+                    </div>
+
+
+                  </div>
+                </div>
+              </div> 
+
+              <% end %> 
+              
+            </div>
+
+            <div class="col-md-2">
+
+              <div class="pccp mt-2" align="center">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              
+    <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-2390065838671224"
+                   data-ad-slot="1441100372"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>              
+            </div>
+
+            
+          </div>
+
+
+
+
+	
+
+    
+      
+  </body>
+</html>
